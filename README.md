@@ -6,17 +6,17 @@
 
 ## 🚀 시작하기 — 편한 방식 선택
 
-### A. Google Colab으로 바로 *(비개발자에게 추천)*
+### A. Google Colab으로 바로 *(간단 버전 · Google 로그인만 · 일부 기능 제한 가능)*
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jjunsss/cheapest-flights/blob/main/notebooks/cheapest_flights_colab.ipynb)
 
-> 설치가 낯선 사람도 노트북에서 버튼 한 번으로 앱을 열 수 있습니다.
+> 가장 빠르게 체험해보는 용도. 노트북 버튼 한 번이면 됩니다. 단, Colab 환경 특성상 일부 사이트가 차단되거나 결과가 누락될 수 있어요. 안정적인 결과가 필요하면 아래 **B** 권장.
 
 1. 위 **`Open in Colab`** 버튼 클릭
 2. 노트북이 열리면 **`앱 시작하기`** 왼쪽 **▶ 버튼** 클릭
 3. 앱 화면에서 출발지·도착지·날짜를 고르고 검색
 
-### B. 브라우저 개발 환경에서 바로 *(GitHub 로그인 + 명령어 한 줄)*
+### B. 원본 개발 환경 (Codespaces) *(✅ 추천 · GitHub 로그인 + 명령어 한 줄)*
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/jjunsss/cheapest-flights?quickstart=1)
 
