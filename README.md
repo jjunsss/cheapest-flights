@@ -28,9 +28,14 @@
 3. 다음 화면에서 초록 **`Create codespace on main`** 버튼 한 번 클릭
 4. **2분쯤 기다리기** — 자동으로 모든 게 깔립니다 (진행 메시지가 흘러갑니다)
 5. 잠시 후 화면 아래쪽에 **시커먼 터미널 칸**이 보이면 → 거기에 `npm run dev` 입력하고 **Enter**
-6. 잠시 후 VS Code 화면 아래쪽 패널에 **`PORTS`** 탭이 보입니다 → 거기서 **`5173`** 줄을 찾기
-7. 그 줄의 **`Forwarded Address`** 칸에 뜬 주소 (예: `https://xxxx-5173.app.github.dev`) 옆 🌐 아이콘을 클릭 → 새 탭에 앱 열림
-   - 또는 그 주소를 복사해서 새 탭 주소창에 붙여넣어도 됩니다
+6. 잠시 후 같은 터미널 화면에 **`http://localhost:5173/`** 또는 **`https://xxxx-5173.app.github.dev`** 같은 주소가 뜹니다 → 그 주소를 복사해서 **새 탭 주소창**에 붙여넣기
+
+<details>
+<summary>📷 터미널에 이렇게 뜹니다 (이미지)</summary>
+
+<img src="docs/screenshots/codespaces-vite-log.png" alt="Vite 터미널 출력 예시" width="620">
+
+</details>
 
 → 새 탭에 앱이 열립니다.
 
