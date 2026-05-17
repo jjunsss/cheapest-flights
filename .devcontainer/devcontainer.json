@@ -16,9 +16,7 @@
       "onAutoForward": "ignore"
     }
   },
-  "postAttachCommand": {
-    "message": "echo '\\n✅ 준비 완료! 터미널에서 (npm run dev) 입력하고 엔터. 잠시 후 자동으로 브라우저가 열립니다.\\n'"
-  },
+  "postAttachCommand": "npm run dev",
   "customizations": {
     "vscode": {
       "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]

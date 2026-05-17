@@ -1,5 +1,7 @@
 # Search Cheapest Airplane
 
+![version](https://img.shields.io/badge/version-v0.1.0-2f6fe4) [![Release notes](https://img.shields.io/badge/release-notes-1f7a63)](https://github.com/jjunsss/cheapest-flights/releases)
+
 단일 도착지를 기준으로 여러 출국일·귀국일·숙박일수 조합을 훑어보고, 저렴한 직항 후보를 비교하는 도구입니다. 최저가를 검색하기만 하고, 실제 예약은 다른 곳(여행사·항공사 홈페이지·다른 비교 사이트 등)에서 수행해도 됩니다.
 
 **💡💡마음에 들었다면 별(Star) 꾸욱 부탁드리겠습니다~!💡💡**
@@ -16,15 +18,14 @@
 1. **위 초록 `Open in GitHub Codespaces` 버튼** 클릭
 2. GitHub 로그인 (또는 가입)
 3. 다음 화면에서 초록 **`Create codespace on main`** 버튼 한 번 클릭
-4. **2분쯤 기다리기** — 자동으로 모든 게 깔립니다 (진행 메시지가 흘러갑니다)
-5. 잠시 후 화면 아래쪽에 **시커먼 터미널 칸**이 보이면 → 거기에 `npm run dev` 입력하고 **Enter**
-6. 잠시 후 같은 터미널 화면에 **`http://localhost:5173/`** 같은 주소가 뜹니다 → 그 주소를 복사해서 **새 탭 주소창**에 붙여넣기
+4. **2~3분 기다리기** — 자동으로 모든 게 깔리고 앱이 시작됩니다 (`npm run dev` 자동 실행)
+5. 화면 아래쪽 **`PORTS`** 탭에 `5173`이 뜨면 → 그 줄의 주소를 복사해서 **새 탭 주소창**에 붙여넣기 *(또는 자동으로 새 탭이 열림)*
 
 → 새 탭에 앱이 열립니다.
 
-> ⚠️ **주소가 안 뜨거나 새 탭이 안 열릴 때**
-> 1. 검은 터미널 칸을 클릭한 뒤 **`Ctrl + C`** 한 번 → 다시 `npm run dev` 입력하고 **Enter**
-> 2. 그래도 안 되면, 열려 있던 브라우저 탭을 닫고 <https://github.com/codespaces> 로 가서 같은 codespace를 다시 클릭해 들어간 다음 5번 단계부터 다시 (`npm run dev` Enter)
+> ⚠️ **앱이 안 뜨거나 새 탭이 안 열릴 때**
+> 1. 아래쪽 시커먼 터미널 칸을 클릭한 뒤 **`Ctrl + C`** → 다시 `npm run dev` 입력하고 **Enter**
+> 2. 그래도 안 되면, 브라우저 탭을 닫고 <https://github.com/codespaces> 로 가서 같은 codespace를 다시 클릭해 들어간 뒤 위 1~2번 fallback을 다시 시도
 
 🔎 화면 보면서 따라가고 싶다면 → **[단계별 화면 가이드](docs/CODESPACES.md)**
 
