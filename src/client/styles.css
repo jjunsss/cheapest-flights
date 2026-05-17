@@ -734,8 +734,6 @@ input:focus {
   position: absolute;
   top: 0;
   left: 0;
-  offset-anchor: center;
-  offset-path: path("M18 116 C92 12 228 12 302 116");
 }
 
 .plane-wrap {
@@ -743,8 +741,27 @@ input:focus {
   height: 34px;
   color: #1f7a63;
   filter: drop-shadow(0 10px 12px rgba(31, 122, 99, 0.22));
-  offset-distance: 12%;
-  offset-rotate: auto;
+  /* Fallback layout when offset-path isn't applied yet (some browser/load races). */
+  top: 80px;
+  left: 8px;
+}
+
+/* Use CSS motion-path only where supported; otherwise fall back to the linear
+   transform animation below so the plane never freezes at the origin. */
+@supports (offset-path: path("M0 0L1 1")) {
+  .plane-wrap,
+  .data-packet {
+    top: 0;
+    left: 0;
+    offset-anchor: center;
+    offset-path: path("M18 116 C92 12 228 12 302 116");
+  }
+  .plane-wrap {
+    top: auto;
+    left: auto;
+    offset-distance: 12%;
+    offset-rotate: auto;
+  }
 }
 
 .flight-plane-icon {
@@ -754,7 +771,19 @@ input:focus {
 }
 
 .flight-motion.is-active .plane-wrap {
-  animation: flight-path 4.15s cubic-bezier(0.45, 0.05, 0.2, 1) infinite;
+  animation: plane-fallback 4.15s linear infinite;
+}
+
+@supports (offset-path: path("M0 0L1 1")) {
+  .flight-motion.is-active .plane-wrap {
+    animation: flight-path 4.15s cubic-bezier(0.45, 0.05, 0.2, 1) infinite;
+  }
+}
+
+@keyframes plane-fallback {
+  0% { transform: translateX(0); opacity: 0; }
+  10%, 90% { opacity: 1; }
+  100% { transform: translateX(280px); opacity: 0; }
 }
 
 .flight-motion.queued .plane-wrap {
