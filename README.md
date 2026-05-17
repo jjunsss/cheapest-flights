@@ -137,44 +137,4 @@ npm test                 # 유닛 테스트
 npm run build            # 프로덕션 빌드
 ```
 
-### 환경 변수 (선택)
-
-| 변수 | 기본값 | 설명 |
-|---|---|---|
-| `FLIGHT_MAX_PAIRS` | 18 | 한 도착지당 최대 (출국·귀국) 조합 수. 출발일과 숙박일수를 함께 넓게 커버 |
-| `FLIGHT_PARALLEL` | 3 | 동시 실행 워커 수 (↑ 빠름 / 차단 위험↑) |
-| `FLIGHT_SETTLE_MS` | 900 | 첫 가격 카드 감지 후 추가로 기다리는 안정화 시간 |
-| `FLIGHT_BLOCK_HEAVY_RESOURCES` | 1 | 폰트·미디어·추적 요청 차단. `0`이면 비활성화 |
-| `FLIGHT_BLOCK_IMAGES` | 0 | 이미지까지 차단. 빠를 수 있지만 일부 사이트 결과 누락 위험 |
-| `FX_RATES_JSON` | — | 환율 수동 지정 — 예: `'{"USD":1380,"EUR":1490}'` |
-
-### 폴더 구조
-
-```
-src/
-  client/          React 프론트 (Vite)
-  server/          Fastify 백엔드
-    sources/       Trip / Kayak / Momondo 자동 스크래퍼
-    domain/        날짜·환율·검증 로직
-  shared/          프론트·백엔드 공용 타입, 공항 데이터
-scripts/           start.sh / start.bat (원클릭 실행)
-.devcontainer/     GitHub Codespaces 자동 셋업
-docs/screenshots/  README용 화면 캡처
-```
-
-### 스크래핑 흐름
-
-1. `manager.processRun`이 `generateDatePairs`로 (출국·귀국) 조합 생성 후 출발일·숙박일수 다양성을 함께 보며 조합 선택 (cap = `FLIGHT_MAX_PAIRS`)
-2. `FLIGHT_PARALLEL`개 worker가 각자 Playwright `BrowserContext`를 갖고 큐에서 task 소비
-3. 각 task는 이미지·폰트·미디어·추적 요청을 차단하고, 가격 카드가 감지되면 고정 대기 없이 바로 파싱
-4. `src/server/sources/{kayak,momondo,trip}.ts`의 scraper 호출 → `parseCardText`로 가격·항공사·시각 추출
-5. `scrapedToCandidate` → `insertCandidate` → SSE event로 진행률 push
-6. 메인 소스 0건이면 `AUTO_SOURCES`의 나머지로 **자동 폴백**
-7. 클라이언트는 1.5초마다 `/api/runs/:id` 폴링 + SSE 보강
-
-### 데이터 위치
-
-- SQLite: `data/flights.sqlite` (전체 검색·결과 기록, `.gitignore`)
-- 리포트: `reports/<run-id>/{summary.md, candidates.csv, candidates.json, coverage.json}`
-
 </details>
