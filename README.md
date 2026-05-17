@@ -40,6 +40,8 @@
 > ⚠️ **결제 수단 등록 안 된 무료 계정**은 한 달 60시간 한도를 넘으면 그냥 멈춥니다 (청구 X).
 > 다만 **결제 수단을 등록해둔 계정**은 한도 초과 시 자동으로 과금될 수 있으니, 사용 후 반드시 `Stop`을 눌러주세요. 30분 idle 자동 중지를 믿지 말고 직접 끄는 습관이 안전합니다.
 
+&nbsp;
+
 ### B. 내 노트북에서 직접 *(로컬 PC에서 사용)*
 
 1. **Node.js 설치** *(처음 한 번만)* — <https://nodejs.org> 에서 LTS 다운로드 후 설치
@@ -53,6 +55,17 @@
 > 혹시 브라우저가 자동으로 안 열리면, 검은 창에 뜬 **`http://localhost:5173/`** 주소를 직접 브라우저 주소창에 입력하세요.
 
 종료할 땐 검은 창에서 `Ctrl + C` (또는 그냥 창 닫기).
+
+### C. 개발자용 *(명령어로 직접 실행)*
+
+```sh
+npm install
+npx playwright install chromium
+npm run dev
+npm run typecheck
+npm test
+npm run build
+```
 
 <!--
 보류: Google Colab 실행법
@@ -113,21 +126,3 @@ Colab은 가장 쉽게 써볼 수 있지만, 환경 특성상 안 될 수 있고
 - 가격은 실제 예약 시 다를 수 있음. 참고용.
 - 위탁 수하물, 좌석 선택, 결제 수수료는 예약 사이트에서 재점검 필요.
 - 다른 사이트(현재 조사하는 것 이외)에서 더 쌀수도 있음.
-
----
-
-<details>
-<summary><strong>🛠 개발자용</strong></summary>
-
-### 명령어
-
-```sh
-npm install              # 의존성
-npx playwright install chromium
-npm run dev              # 개발 서버 (front 5173 + back 3001)
-npm run typecheck        # 타입 체크
-npm test                 # 유닛 테스트
-npm run build            # 프로덕션 빌드
-```
-
-</details>
