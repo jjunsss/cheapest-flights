@@ -1,8 +1,11 @@
+import { existsSync } from "node:fs";
+import path from "node:path";
 import Fastify from "fastify";
+import fastifyStatic from "@fastify/static";
 import type { FlightRunEvent, FlightSearchPayload } from "../shared/types.js";
 import { openDatabase } from "./db.js";
 import { RunEventHub } from "./events.js";
-import { ensureRuntimeDirs } from "./paths.js";
+import { ensureRuntimeDirs, ROOT_DIR } from "./paths.js";
 import { RunManager } from "./manager.js";
 import { readRunReportFile, writeRunReports } from "./reports.js";
 
@@ -97,6 +100,20 @@ app.get("/api/runs/:id/reports/:file", async (request, reply) => {
     return reply.code(404).send({ error: error instanceof Error ? error.message : String(error) });
   }
 });
+
+const clientDistDir = path.join(ROOT_DIR, "dist", "client");
+if (existsSync(path.join(clientDistDir, "index.html"))) {
+  void app.register(fastifyStatic, {
+    root: clientDistDir
+  });
+
+  app.setNotFoundHandler((request, reply) => {
+    if (request.url.startsWith("/api/")) {
+      return reply.code(404).send({ error: "Not Found", statusCode: 404 });
+    }
+    return reply.sendFile("index.html");
+  });
+}
 
 const port = Number(process.env.PORT ?? 3001);
 const host = process.env.HOST ?? "127.0.0.1";
