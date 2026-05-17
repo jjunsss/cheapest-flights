@@ -1,9 +1,20 @@
 # ✈️ Search Cheapest Airplane
 ---
 
-## 🚀 시작하기 — 2가지 중 편한 것
+## 🚀 시작하기 — 편한 방식 선택
 
-### A. 브라우저에서 바로 *(아무것도 설치 안 함, 가장 쉬움)*
+### A. Google Colab으로 바로 *(Google 로그인 + 실행 버튼 클릭)*
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jjunsss/cheapest-flights/blob/main/notebooks/cheapest_flights_colab.ipynb)
+
+> 설치가 낯선 사람에게 가장 설명하기 쉬운 방식입니다. 노트북 안에 한글 설명, 화면 이미지, 실행 버튼이 들어 있습니다.
+
+1. 위 **`Open in Colab`** 버튼 클릭
+2. 노트북이 열리면 위에서부터 코드 칸 왼쪽 **▶ 버튼** 클릭
+3. `앱 서버 준비 완료`가 나오면 **앱 열기** 버튼 클릭
+4. 앱 화면에서 출발지·도착지·날짜를 고르고 검색
+
+### B. 브라우저 개발 환경에서 바로 *(GitHub 로그인 + 명령어 한 줄)*
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/jjunsss/cheapest-flights?quickstart=1)
 
@@ -18,7 +29,7 @@
 
 → 새 탭에 앱이 열립니다. 사용 끝나면 그냥 탭/창을 닫으면 됩니다 (자동으로 30분 후 잠들어요).
 
-### B. 노트북에서 직접
+### C. 내 노트북에서 직접 *(Node.js 한 번 설치 + 스크립트 더블클릭)*
 
 1. **Node.js 설치** *(처음 한 번만)* — <https://nodejs.org> 에서 LTS 다운로드 후 설치
 2. **이 저장소 받기** — GitHub 페이지 초록 `Code` 버튼 → `Download ZIP` → 압축 풀기
