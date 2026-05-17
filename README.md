@@ -30,9 +30,25 @@
 6. 잠시 후 같은 터미널 화면에 **`http://localhost:5173/`** 또는 **`https://xxxx-5173.app.github.dev`** 같은 주소가 뜹니다 → 그 주소를 복사해서 **새 탭 주소창**에 붙여넣기
 
 <details>
-<summary>📷 터미널에 이렇게 뜹니다 (이미지)</summary>
+<summary>📷 단계별 화면 모음 (펼치기)</summary>
 
-<img src="docs/screenshots/codespaces-vite-log.png" alt="Vite 터미널 출력 예시" width="620">
+#### Step 1. 저장소 페이지에서 위쪽 초록 `Open in GitHub Codespaces` 뱃지 클릭
+<img src="docs/screenshots/codespaces/01-repo-badge.png" alt="저장소 페이지" width="720">
+
+#### Step 2. GitHub 로그인 (계정 없으면 `Create an account`)
+<img src="docs/screenshots/codespaces/02-create.png" alt="GitHub 로그인 화면" width="720">
+
+#### Step 3. 로그인 직후 — 초록 `Create codespace on main` 버튼 한 번 클릭
+> 캡처 준비 중. 페이지가 단순합니다 — 가운데 초록 큰 버튼 하나만 누르면 됩니다.
+
+#### Step 4. 2분쯤 자동 설치 진행
+> VS Code 화면이 뜨고 아래쪽에 진행 로그가 흘러갑니다. 가만히 기다리면 됩니다.
+
+#### Step 5. 터미널 칸에 `npm run dev` 입력 + Enter — 이렇게 뜹니다
+<img src="docs/screenshots/codespaces-vite-log.png" alt="Vite 터미널 출력 예시" width="640">
+
+#### Step 6. 터미널에 나온 주소를 복사해서 새 탭에 붙여넣기 → 앱 화면
+<img src="docs/screenshots/01-search.png" alt="앱 검색 화면" width="640">
 
 </details>
 
