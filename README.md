@@ -10,7 +10,7 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jjunsss/cheapest-flights/blob/main/notebooks/cheapest_flights_colab.ipynb)
 
-> 설치가 낯선 사람에게 가장 설명하기 쉬운 방식입니다. 노트북 안에 한글 설명, 화면 이미지, 실행 버튼, 문제 해결 셀이 들어 있습니다.
+> 설치가 낯선 사람에게 가장 설명하기 쉬운 방식입니다. 노트북 안에 한글 설명, 화면 이미지, 실행 버튼이 들어 있습니다.
 
 1. 위 **`Open in Colab`** 버튼 클릭
 2. 노트북이 열리면 위에서부터 코드 칸 왼쪽 **▶ 버튼** 클릭
