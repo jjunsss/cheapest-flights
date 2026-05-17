@@ -7,7 +7,16 @@
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/jjunsss/cheapest-flights?quickstart=1)
 
-위 초록 버튼 → 환경 준비 후 터미널에 `npm run dev`.
+> GitHub 계정만 있으면 됩니다. 없으면 위 버튼 누를 때 자동으로 가입 화면이 나옵니다 (이메일·비밀번호 입력만, 1분).
+
+1. **위 초록 `Open in GitHub Codespaces` 버튼** 클릭
+2. GitHub 로그인 (또는 가입)
+3. 다음 화면에서 초록 **`Create codespace on main`** 버튼 한 번 클릭
+4. **2분쯤 기다리기** — 자동으로 모든 게 깔립니다 (진행 메시지가 흘러갑니다)
+5. 잠시 후 화면 아래쪽에 **시커먼 터미널 칸**이 보이면 → 거기에 `npm run dev` 입력하고 **Enter**
+6. 우하단에 *"포트 5173이 사용 가능합니다"* 알림이 뜨면 → **`브라우저에서 열기`** 클릭
+
+→ 새 탭에 앱이 열립니다. 사용 끝나면 그냥 탭/창을 닫으면 됩니다 (자동으로 30분 후 잠들어요).
 
 ### B. 노트북에서 직접
 
