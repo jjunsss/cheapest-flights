@@ -6,21 +6,11 @@
 
 ## 🚀 시작하기 — 편한 방식 선택
 
-### A. Google Colab으로 바로 *(가장 쉬움 · 안정성 낮을 수 있음)*
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jjunsss/cheapest-flights/blob/main/notebooks/cheapest_flights_colab.ipynb)
-
-> 가장 쉽게 써볼 수 있는 방식입니다. 단, Colab 환경 특성상 안 될 수 있고, 화면이 좁거나 보기 불편할 수 있습니다.
-
-1. 위 **`Open in Colab`** 버튼 클릭
-2. 노트북이 열리면 **`앱 시작하기`** 왼쪽 **▶ 버튼** 클릭
-3. 앱 화면에서 출발지·도착지·날짜를 고르고 검색
-
-### B. 원본 개발 환경 (Codespaces) *(안정적 · 화면 보기 좋음 · GitHub 아이디 필요)*
+### A. 원본 개발 환경 (Codespaces) *(추천 · 안정적 · 화면 보기 좋음)*
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/jjunsss/cheapest-flights?quickstart=1)
 
-> 개발 환경에서 실행해서 Colab보다 안정적이고 화면도 보기 좋습니다. 단, GitHub 아이디가 필요합니다.
+> GitHub 아이디가 필요하지만, 현재 가장 안정적이고 화면도 보기 좋은 방식입니다.
 
 1. **위 초록 `Open in GitHub Codespaces` 버튼** 클릭
 2. GitHub 로그인 (또는 가입)
@@ -51,7 +41,7 @@
 > ⚠️ **결제 수단 등록 안 된 무료 계정**은 한 달 60시간 한도를 넘으면 그냥 멈춥니다 (청구 X).
 > 다만 **결제 수단을 등록해둔 계정**은 한도 초과 시 자동으로 과금될 수 있으니, 사용 후 반드시 `Stop`을 눌러주세요. 30분 idle 자동 중지를 믿지 말고 직접 끄는 습관이 안전합니다.
 
-### C. 내 노트북에서 직접 *(Node.js 한 번 설치 + 스크립트 더블클릭)*
+### B. 내 노트북에서 직접 *(Node.js 한 번 설치 + 스크립트 더블클릭)*
 
 1. **Node.js 설치** *(처음 한 번만)* — <https://nodejs.org> 에서 LTS 다운로드 후 설치
 2. **이 저장소 받기** — GitHub 페이지 초록 `Code` 버튼 → `Download ZIP` → 압축 풀기
@@ -60,6 +50,18 @@
    - **macOS / Linux** — 터미널에서 `bash scripts/start.sh`
 
 스크립트가 알아서 설치하고 브라우저까지 열어줍니다. 종료할 땐 `Ctrl + C`.
+
+<!--
+보류: Google Colab 실행법
+
+Colab은 가장 쉽게 써볼 수 있지만, 환경 특성상 안 될 수 있고 화면이 좁거나 보기 불편할 수 있어 일단 README에서 숨겨둡니다.
+
+[Open In Colab](https://colab.research.google.com/github/jjunsss/cheapest-flights/blob/main/notebooks/cheapest_flights_colab.ipynb)
+
+1. 위 Open in Colab 버튼 클릭
+2. 노트북이 열리면 앱 시작하기 왼쪽 실행 버튼 클릭
+3. 앱 화면에서 출발지·도착지·날짜를 고르고 검색
+-->
 
 ---
 
