@@ -9,7 +9,8 @@
   "portsAttributes": {
     "5173": {
       "label": "최저가 찾기 (앱)",
-      "onAutoForward": "openBrowser"
+      "onAutoForward": "openBrowser",
+      "visibility": "public"
     },
     "3001": {
       "label": "백엔드 API",
