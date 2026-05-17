@@ -1,0 +1,27 @@
+{
+  "name": "Search Airplane",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {}
+  },
+  "postCreateCommand": "npm install && npx playwright install chromium --with-deps",
+  "forwardPorts": [5173, 3001],
+  "portsAttributes": {
+    "5173": {
+      "label": "최저가 찾기 (앱)",
+      "onAutoForward": "openBrowser"
+    },
+    "3001": {
+      "label": "백엔드 API",
+      "onAutoForward": "ignore"
+    }
+  },
+  "postAttachCommand": {
+    "message": "echo '\\n✅ 준비 완료! 터미널에서 (npm run dev) 입력하고 엔터. 잠시 후 자동으로 브라우저가 열립니다.\\n'"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
+    }
+  }
+}

@@ -1,0 +1,3 @@
+carrier,flight_number,origin,destination,depart_at,return_at,currency,total_price,duration_minutes,stops,booking_url
+Broken Air,BA404,ICN,CDG,not-a-date,2026-06-08T21:00:00+02:00,KRW,1250000,820,0,https://example.test/book/broken
+Missing Price,MP101,ICN,CDG,2026-06-01T11:10:00+09:00,2026-06-08T21:00:00+02:00,KRW,,820,0,https://example.test/book/missing

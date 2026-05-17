@@ -1,0 +1,40 @@
+node_modules/
+dist/
+
+# 검색 기록·결과 파일 (개인정보 포함 가능 — 절대 커밋 금지)
+data/
+reports/
+tmp/
+.cache/
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+
+# 환경 변수
+.env
+.env.local
+
+# Playwright 산출물
+playwright-report/
+test-results/
+
+# Editor / OS
+.DS_Store
+.vscode/settings.json
+.idea/
+
+# 로컬 임시 디버그 스크립트
+.scout*.mjs
+.flow-snap.mjs
+.preview-runner.mjs
+.debug-*.mjs
+.fast-snap.mjs
+.simple-snap.mjs
+.final-snap.mjs
+.speed-test.mjs
+.sort-test.mjs
+.weekday-check.mjs
+.kayak-probe.mjs
+.trip-probe.mjs
+.ui-snap.mjs

@@ -1,0 +1,5 @@
+carrier,flight_number,origin,destination,depart_at,return_at,currency,total_price,duration_minutes,stops,booking_url
+Korean Air,KE901,ICN,CDG,2026-06-01T11:10:00+09:00,2026-06-08T21:00:00+02:00,KRW,1250000,820,0,https://example.test/book/ke901
+Air France,AF267,ICN,CDG,2026-06-01T09:05:00+09:00,2026-06-08T19:30:00+02:00,EUR,820,910,1,https://example.test/book/af267
+Emirates,EK323,ICN,CDG,2026-06-02T23:55:00+09:00,2026-06-09T15:05:00+02:00,USD,760,1045,1,https://example.test/book/ek323
+Korean Air,KE902,ICN,CDG,2026-06-03T10:00:00+09:00,2026-06-10T21:00:00+02:00,KRW,1390000,830,0,https://example.test/book/ke902
