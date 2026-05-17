@@ -6,11 +6,11 @@
 
 ## 🚀 시작하기 — 편한 방식 선택
 
-### A. 원본 개발 환경 (Codespaces) *(추천 · 안정적 · 화면 보기 좋음)*
+### A. GitHub 클라우드 환경 (Codespaces) *(추천)*
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/jjunsss/cheapest-flights?quickstart=1)
 
-> GitHub 아이디가 필요하지만, 현재 가장 안정적이고 화면도 보기 좋은 방식입니다.
+> GitHub 계정만 있으면 됩니다. 노트북에 아무것도 설치할 필요 없이 브라우저에서 바로 시작할 수 있습니다.
 
 1. **위 초록 `Open in GitHub Codespaces` 버튼** 클릭
 2. GitHub 로그인 (또는 가입)
@@ -41,7 +41,7 @@
 > ⚠️ **결제 수단 등록 안 된 무료 계정**은 한 달 60시간 한도를 넘으면 그냥 멈춥니다 (청구 X).
 > 다만 **결제 수단을 등록해둔 계정**은 한도 초과 시 자동으로 과금될 수 있으니, 사용 후 반드시 `Stop`을 눌러주세요. 30분 idle 자동 중지를 믿지 말고 직접 끄는 습관이 안전합니다.
 
-### B. 내 노트북에서 직접 *(Node.js 한 번 설치 + 스크립트 더블클릭)*
+### B. 내 노트북에서 직접 *(개발 도구 다룰 줄 아는 사람용 · 로컬 PC에 설치)*
 
 1. **Node.js 설치** *(처음 한 번만)* — <https://nodejs.org> 에서 LTS 다운로드 후 설치
 2. **이 저장소 받기** — GitHub 페이지 초록 `Code` 버튼 → `Download ZIP` → 압축 풀기
