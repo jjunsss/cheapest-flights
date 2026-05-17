@@ -21,6 +21,10 @@
 
 → 새 탭에 앱이 열립니다.
 
+> ⚠️ **주소가 안 뜨거나 새 탭이 안 열릴 때**
+> 1. 검은 터미널 칸을 클릭한 뒤 **`Ctrl + C`** 한 번 → 다시 `npm run dev` 입력하고 **Enter**
+> 2. 그래도 안 되면, 열려 있던 브라우저 탭을 닫고 <https://github.com/codespaces> 로 가서 같은 codespace를 다시 클릭해 들어간 다음 5번 단계부터 다시 (`npm run dev` Enter)
+
 🔎 화면 보면서 따라가고 싶다면 → **[단계별 화면 가이드](docs/CODESPACES.md)**
 
 &nbsp;
