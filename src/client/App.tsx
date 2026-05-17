@@ -132,7 +132,7 @@ export default function App() {
   const [stayFilters, setStayFilters] = useState<number[]>([]);
   const [carrierFilters, setCarrierFilters] = useState<string[]>([]);
   const [baggageFilter, setBaggageFilter] = useState<BaggageFilter>('all');
-  const [resultLimit, setResultLimit] = useState<ResultLimit>(60);
+  const [resultLimit, setResultLimit] = useState<ResultLimit>(30);
   const [selectedCandidateId, setSelectedCandidateId] = useState<string | null>(null);
 
   const availableDepartDates = useMemo(() => {
@@ -856,7 +856,7 @@ export default function App() {
             </div>
           )}
 
-          {visibleCandidates.length > 30 && (
+          {previewCandidates.length > 30 && (
             <div className="list-options">
               <label className="list-limit-control">
                 <span>표시 개수</span>
