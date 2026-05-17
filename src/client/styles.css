@@ -1792,14 +1792,14 @@ input:focus {
   .topbar-plane.is-active .topbar-plane-icon,
   .flight-motion.is-active .sky-streak,
   .flight-motion.is-active .route-path-pulse,
-  .flight-motion.is-active .plane-wrap,
   .flight-motion.is-active .data-packet,
   .flight-motion.is-active .flight-source i {
     animation: none;
   }
 
   .flight-motion.is-active .plane-wrap {
+    animation-duration: 7s;
+    animation-timing-function: linear;
     opacity: 1;
-    offset-distance: 62%;
   }
 }
